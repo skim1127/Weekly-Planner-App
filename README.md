@@ -16,6 +16,30 @@ A 7-day planner with checklist functionalities
 2. Back End - Sequelize or SQLAlchemy
 3. Styling - SASS
 
+## Development Process
+1. I started out thinking about how I wanted the login page and homepage to look like, and made some simple layouts with paint.
+
+##### Login Page
+
+- ![alt tag](https://i.gyazo.com/29e0434e5f2a9e43a230fa65d633227f.png)
+##### Homepage
+- ![alt tag](https://i.gyazo.com/f64cd58a2aa4c26731cc6fdaf5fdcd2a.png)
+
+2. I then started thinking about possible database relationships between the Users, checklists, and events. I decided to differentiate between checklist tasks, and calendar events, and made it so that only calendar events will have some time element to it(start date & time, end date & time). Checklist tasks on the other hand, will have check boxes to indicate whether the task was completed or not.
+
+##### Database Relationship First Draft
+- ![alt tag](https://i.gyazo.com/6d85fe5aa2b1a49255bb1fecc0ca42a6.png)
+
+3. After defining database relationships, I wanted to figure out exactly how many endpoints I will need for my frontend and backend.
+##### [Front End]
+- /login
+- /user-homepage
+- /checklists
+- /monthly-calendar
+- /user-profile
+
+##### [Back End]
+- /
 ## Outstanding Bugs & Unfinished Functionality
 
 ## POST-MVP Plans
