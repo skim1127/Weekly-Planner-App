@@ -13,7 +13,7 @@ A 7-day planner with checklist functionalities
 
 ## Technologies used to build the application
 1. Front End - React
-2. Back End - Sequelize or SQLAlchemy
+2. Back End - Flask & SQLAlchemy
 3. Styling - SASS
 
 ## Development Process
