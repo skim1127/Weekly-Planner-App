@@ -1,4 +1,4 @@
-# imports
+# import necessary modules
 from flask import Flask
 from flask_migrate import Migrate
 from dotenv import load_dotenv
@@ -14,6 +14,7 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("SQLALCHEMY_DATABASE_URI")
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+    # Import Database Models
     from . import models
     models.db.init_app(app)
     migrate = Migrate(app, models.db)
